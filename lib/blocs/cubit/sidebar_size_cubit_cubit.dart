@@ -17,7 +17,7 @@ class SidebarSizeCubit extends Cubit<SidebarSizeCubitState> {
   /// Update the sidebar width by adding the drag delta
   void updateWidth(double delta) {
     final newWidth = state.width + delta;
-    // clamp the width between 100 and 600 for safety
+    // clamp the width between initial width and 55% of whole width for safety
     final clampedWidth = newWidth.clamp(initialWidth, maxWidth);
     emit(state.copyWith(width: clampedWidth));
   }
