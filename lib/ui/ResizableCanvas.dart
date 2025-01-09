@@ -37,7 +37,8 @@ class ResizableCanvas extends StatelessWidget {
           Expanded(
             child: Container(
               color: Colors.white,
-              child: Mainboard()
+              alignment: Alignment.topCenter,
+              child: MainBoard()
             ),
           ),
         ],
