@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yara/blocs/cubit/sidebar_size_cubit_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:yara/ui/MainBoard.dart';
 import 'package:yara/ui/Sidebar.dart';
 
 class ResizableCanvas extends StatelessWidget {
@@ -36,12 +37,7 @@ class ResizableCanvas extends StatelessWidget {
           Expanded(
             child: Container(
               color: Colors.white,
-              child: Center(
-                child: Text(
-                  'Main Content Area',
-                  style: TextStyle(fontSize: 24),
-                ),
-              ),
+              child: Mainboard()
             ),
           ),
         ],
