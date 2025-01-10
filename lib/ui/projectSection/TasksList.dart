@@ -12,7 +12,11 @@ class TasksList extends StatelessWidget {
         itemCount: tasks.length,
         shrinkWrap: true,
         itemBuilder: (context, index) {
-      return Placeholder();
+      return Container(
+        child: Row(children: [
+
+        ],)
+      );
     });
   }
 }
